@@ -4,6 +4,7 @@
 import { NavBar } from "../Navbar";
 import { HeroContent } from "../Hero";
 import { Intro } from "../Intro";
+import { Footer } from "../Footer";
 
 const links = [
     {
@@ -68,6 +69,7 @@ export function Layout({ children }) {
                 <NavBar links={links} />
                 <HeroContent />
                 <Intro />
+                <Footer />
                 {/* <section className="px-5 py-5 text-[#434C50] h-[calc(100vh-70px-2rem)] overflow-y-scroll rounded-sm mx-7 my-2">{children}</section> */}
             </section>
         </main>

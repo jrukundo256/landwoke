@@ -107,13 +107,17 @@ export function Intro() {
             </Text>
 
             <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                By offering a unified solution, We empowers Ugandans from all walks of life with easy access to verified information, 
+                By offering a unified solution, We empowers Ugandans from all walks of life with easy access to verified information,
                 foster transparency in land transactions, and contribute to a more secure and efficient land market.
             </Text>
 
             <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
                 {features}
             </SimpleGrid>
+
+            <a>
+                Looking for vital contacts of lawyers, vetted property dealers, etc? Check out our land directory today.
+            </a>
         </Container>
     );
 }
