@@ -3,6 +3,7 @@
 
 import { NavBar } from "../Navbar";
 import { HeroContent } from "../Hero";
+import { Intro } from "../Intro";
 
 const links = [
     {
@@ -61,10 +62,12 @@ const links = [
 
 export function Layout({ children }) {
     return (
-        <main className="flex w-screen h-screen items-center justify-between outline fixed">
-            <section className="w-full min-h-screen">
+        <main className="flex w-full">
+            {/* <main className="flex w-screen items-center justify-between outline fixed"></main> */}
+            <section className="w-full">
                 <NavBar links={links} />
                 <HeroContent />
+                <Intro />
                 {/* <section className="px-5 py-5 text-[#434C50] h-[calc(100vh-70px-2rem)] overflow-y-scroll rounded-sm mx-7 my-2">{children}</section> */}
             </section>
         </main>
