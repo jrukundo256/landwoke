@@ -161,7 +161,7 @@ export function NavBar() {
                                 <a href="#" className={classes.link}>
                                     <Center inline>
                                         <Box component="span" mr={5}>
-                                            Features
+                                        Land Marketplace
                                         </Box>
                                         <IconChevronDown size={16} color={theme.fn.primaryColor()} />
                                     </Center>
@@ -202,10 +202,13 @@ export function NavBar() {
                             </HoverCard.Dropdown>
                         </HoverCard>
                         <a href="#" className={classes.link}>
-                            Learn
+                            Directory
                         </a>
                         <a href="#" className={classes.link}>
-                            Academy
+                            Resources
+                        </a>
+                        <a href="#" className={classes.link}>
+                            Land Forum
                         </a>
                     </Group>
 
