@@ -1,11 +1,21 @@
-import React from 'react'
+import { Layout } from "./components/Layout"
+import { Helmet } from "react-helmet";
 
 const App = () => {
+  // return (
+  //   <h1 className="text-3xl font-bold underline">
+  //     LandWoke
+  //   </h1>
+  // )
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      LandWoke
-    </h1>
-  )
+    <Layout>
+      <Helmet>
+        <title>LandWoke - Bringing trust and justice to land ownership</title>
+      </Helmet>
+
+    </Layout>
+  );
 }
 
 export default App
