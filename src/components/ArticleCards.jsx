@@ -2,22 +2,22 @@ import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } f
 
 const mockdata = [
     {
-        title: 'Top 10 things to consider before buying land in Uganda',
+        title: 'Uganda Land Commission under spotlight over illegal distribution of land in Entebbe',
         image:
-            'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'August 18, 2022',
+            'https://nilepost.co.ug/wp-content/uploads/2023/07/Officials-show-the-disputed-landhatsApp-Image-2023-07-10-at-11.17.53-PM-350x250.jpeg',
+        date: 'July 18, 2023',
+    },
+    {
+        title: 'Residents on URC land refuse to make way for railway line repairs',
+        image:
+            'https://nilepost.co.ug/wp-content/uploads/2023/03/URChatsApp-Image-2023-03-28-at-9.29.15-AM-2-350x250.jpeg',
+        date: 'March 18, 2023',
     },
     {
         title: 'Top 10 things to consider before buying land in Uganda',
         image:
-            'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'August 18, 2022',
-    },
-    {
-        title: 'Top 10 things to consider before buying land in Uganda',
-        image:
-            'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'August 18, 2022',
+            'https://nilepost.co.ug/wp-content/uploads/2023/03/Land-wrangles-in-MukonohatsApp-Image-2023-03-24-at-11.25.06-AM-350x250.jpeg',
+        date: 'August 18, 2023',
     },
 
 ];
