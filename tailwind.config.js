@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         jost: ['Jost', 'sans-serif'], // Add the 'Jost' font to the font family list
+        outfit: ['Outfit', 'sans-serif'],
       },
     },
   },
