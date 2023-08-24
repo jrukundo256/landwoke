@@ -4,9 +4,10 @@ const useStyles = createStyles((theme) => ({
     hero: {
         position: 'relative',
         backgroundImage:
-            'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)',
+            'url(src/assets/hero-image2.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        fontFamily: 'Jost',
     },
 
     container: {
@@ -18,6 +19,7 @@ const useStyles = createStyles((theme) => ({
         paddingBottom: `calc(${theme.spacing.xl} * 6)`,
         zIndex: 1,
         position: 'relative',
+        fontFamily: 'Jost',
 
         [theme.fn.smallerThan('sm')]: {
             height: rem(500),
@@ -27,9 +29,10 @@ const useStyles = createStyles((theme) => ({
 
     title: {
         color: theme.white,
-        fontSize: rem(60),
-        fontWeight: 900,
+        fontSize: rem(50),
+        fontWeight: 500,
         lineHeight: 1.1,
+        fontFamily: 'Jost',
 
         [theme.fn.smallerThan('sm')]: {
             fontSize: rem(40),
@@ -45,6 +48,7 @@ const useStyles = createStyles((theme) => ({
     description: {
         color: theme.white,
         maxWidth: 600,
+        fontFamily: 'Jost',
 
         [theme.fn.smallerThan('sm')]: {
             maxWidth: '100%',
@@ -65,7 +69,7 @@ export function HeroContent() {
     const { classes } = useStyles();
 
     return (
-        <div className={classes.hero}>
+        <div className={`${classes.hero} font-jost bg-[#72B5A0]`}>
             <Overlay
                 gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
                 opacity={1}
@@ -76,10 +80,7 @@ export function HeroContent() {
                 <Text className={classes.description} size="xl" mt="xl">
                     A comprehensive hub for land-related information, resources, and a trusted marketplace
                 </Text>
-
-                <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
-                    Learn More
-                </Button>
+                <Button variant="gradient" size="md" radius="sm" className='mt-10 font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>Learn more</Button>
             </Container>
         </div>
     );
