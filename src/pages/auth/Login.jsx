@@ -141,7 +141,7 @@ function Login() {
 
                 <button
                   type="submit"
-                  className="bg-[#449D44] text-white py-2 px-4 my-2 rounded-sm font-medium w-full cursor-pointer flex items-center justify-between hover:bg-[#5BBF61]"
+                  className="bg-[#72B5A0] text-white py-2 px-4 my-2 rounded-sm font-medium w-full cursor-pointer flex items-center justify-between hover:bg-[#5BBF61]"
                 >
                   <span>{loading ? "Signing in..." : "Sign in"}</span>
                   <BiSolidChevronRight />

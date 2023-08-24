@@ -13,9 +13,6 @@ const Directory = () => {
     const [totalPages, setTotalPages] = useState(1);
     const [activePage, setPage] = useState(1);
 
-    const pageSize = 25;
-    const apiUrl = 'https://strapi-sfty.onrender.com/api/articles';
-
     useEffect(() => {
         getArticles();
     }, [activePage]);
@@ -24,7 +21,7 @@ const Directory = () => {
         // setLoading(true);
         try {
             await axios
-                .get("https://strapi-sfty.onrender.com/api/articles")
+                .get("https://strapi-sfty.onrender.com/api/directory-contacts")
                 .then((res) => setArticles(res.data.data));
         } catch (error) {
             console.error("Network Error:", error.message);
@@ -51,13 +48,14 @@ const Directory = () => {
                     </Badge>
                 </Group>
 
-                {/* <ul>
+                <ul>
                     {articles.map((article) => (
                         <li key={article.id} className="article-item my-10">
-                            <h2 className='underline my-2 text-xl font-bold'>{article.attributes.Title}</h2>
-                            <p className='text-xl font-md'>{article.attributes.Excerpt}</p>
-                            <p className="text-sm author">Author: {article.attributes.Author}</p>
-                            <p className="text-sm publication-date">Publication Date: {article.attributes.PublicationDate}</p>
+                            <h2 className='underline my-2 text-xl font-bold'>{article.attributes.Name}</h2>
+                            <p className='text-xl font-md'>{article.attributes.Profession}</p>
+                            <p className="text-sm author">Author: {article.attributes.Contact}</p>
+                            <p className="text-sm author">Author: {article.attributes.Email}</p>
+                            {/* <p className="text-sm publication-date">Publication Date: {article.attributes.PublicationDate}</p> */}
                         </li>
                     ))}
                 </ul>
@@ -68,7 +66,7 @@ const Directory = () => {
                             {index + 1}
                         </button>
                     ))}
-                </div> */}
+                </div>
             </div>
         </Layout>
     );

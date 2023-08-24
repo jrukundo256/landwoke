@@ -80,7 +80,13 @@ export function HeroContent() {
                 <Text className={classes.description} size="xl" mt="xl">
                     A comprehensive hub for land-related information, resources, and a trusted marketplace
                 </Text>
-                <Button variant="gradient" size="md" radius="sm" className='mt-10 font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>Learn more</Button>
+                {/* <Button variant="gradient" size="md" radius="sm" className='mt-10 font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>Learn more</Button> */}
+                <Button variant="gradient" size="md" radius="sm" className='mt-10 font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>
+                    <a href="#about" className='smooth-scroll' style={{ textDecoration: 'none', color: 'inherit' }}>
+                        Learn more
+                    </a>
+                </Button>
+
             </Container>
         </div>
     );

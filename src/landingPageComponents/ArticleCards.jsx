@@ -1,4 +1,5 @@
 import { createStyles, rem, Title, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
+import { Link } from 'react-router-dom';
 
 const mockdata = [
     {
@@ -104,15 +105,14 @@ export function ArticlesCards() {
                 {cards}
             </SimpleGrid>
 
+            
             <div className="text-center mt-5">
-                Hungry for more land-related information ?
-                <a
-                    href="#"
-                    className="text-[#5F5497] hover:underline"
-                >
-                    Discover more information today.
-                </a>
+                <span>Hungry for more land-related information ?</span>
+                <Link to="/articles" className="text-[#5F5497] hover:underline block">Discover more information today.</Link>
             </div>
+
+            
+
         </Container>
     );
 }

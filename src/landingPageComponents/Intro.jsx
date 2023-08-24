@@ -10,6 +10,7 @@ import {
     rem,
 } from '@mantine/core';
 import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
 
 const mockdata = [
     {
@@ -99,7 +100,7 @@ export function Intro() {
     ));
 
     return (
-        <Container className='mt-10 mb-20' size="lg" py="xl">
+        <Container id="about" className='mt-10 mb-20' size="lg" py="xl">
             <Group position="center">
                 <Badge className='font-jost bg-[#72B5A0] lowercase' variant="filled" size="lg">
                     LandWoke
@@ -122,14 +123,15 @@ export function Intro() {
                 {features}
             </SimpleGrid>
 
+            {/* <div className="text-center mt-5">
+                Looking for vital contacts of lawyers, vetted property dealers, etc?
+                <Link to="/directory" className="text-[#5F5497] hover:underline mt-10 block">
+                    Check out our land directory today.
+                </Link>
+            </div> */}
             <div className="text-center mt-5">
-                Looking for vital contacts of lawyers, vetted property dealers, etc? 
-                <a
-                    href="#"
-                    className="text-[#5F5497] hover:underline"
-                >
-                     Check out our land directory today.
-                </a>
+                <span>Looking for vital contacts of lawyers, vetted property dealers, etc?</span>
+                <Link to="/directory" className="text-[#5F5497] hover:underline block">Check out our land directory today.</Link>
             </div>
         </Container>
     );
