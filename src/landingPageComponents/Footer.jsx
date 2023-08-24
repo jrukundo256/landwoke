@@ -8,7 +8,7 @@ const useStyles = createStyles((theme) => ({
         fontFamily: 'Jost',
         color: '#333',
         padding: '5px 100px',
-        marginTop: rem(120),
+        // marginTop: rem(120),
         borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]}`,
     },
 

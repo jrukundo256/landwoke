@@ -18,7 +18,7 @@ import {
     ScrollArea,
     rem,
 } from '@mantine/core';
-import { MantineLogo } from '@mantine/ds';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { useDisclosure } from '@mantine/hooks';
 import {
     IconNotification,
@@ -98,21 +98,22 @@ export function NavBar() {
                     <h2 className='text-[#222] font-bold font-outfit text-lg border border-[#333] px-5 py rounded-xl'>LandWoke</h2>
 
                     <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
-                        <a href="#" className={classes.link}>
+                        {/* Replace anchor tags with Link components */}
+                        <Link to="/" className={classes.link}>
                             Home
-                        </a>
-                        <a href="#" className={classes.link}>
+                        </Link>
+                        <Link to="/marketplace" className={classes.link}>
                             Land marketplace
-                        </a>
-                        <a href="#" className={classes.link}>
+                        </Link>
+                        <Link to="/directory" className={classes.link}>
                             Directory
-                        </a>
-                        <a href="#" className={classes.link}>
+                        </Link>
+                        <Link to="/articles" className={classes.link}>
                             Resources
-                        </a>
-                        <a href="#" className={classes.link}>
+                        </Link>
+                        <Link to="/forum" className={classes.link}>
                             Land Forum
-                        </a>
+                        </Link>
                     </Group>
 
                     <Group className={classes.hiddenMobile}>

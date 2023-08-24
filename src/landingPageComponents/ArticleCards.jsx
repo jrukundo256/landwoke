@@ -39,7 +39,6 @@ const useStyles = createStyles((theme) => ({
         padding: '5px 0 0 0',
         color: '#222',
         fontWeight: 500,
-        fontFamily: 'Jost',
 
         [theme.fn.smallerThan('sm')]: {
             fontSize: rem(24),

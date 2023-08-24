@@ -7,7 +7,7 @@ import {
   
 } from '@mantine/core';
 
-const Articles = () => {
+const Forum = () => {
     const [articles, setArticles] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
@@ -47,11 +47,11 @@ const Articles = () => {
                 {/* <h1 className='text-xl font-bold'>Resources</h1> */}
                 <Group position="left">
                     <Badge className='font-jost bg-[#72B5A0]' variant="filled" size="xl">
-                        Resources
+                        Forum
                     </Badge>
                 </Group>
 
-                <ul>
+                {/* <ul>
                     {articles.map((article) => (
                         <li key={article.id} className="article-item my-10">
                             <h2 className='underline my-2 text-xl font-bold'>{article.attributes.Title}</h2>
@@ -68,10 +68,12 @@ const Articles = () => {
                             {index + 1}
                         </button>
                     ))}
-                </div>
+                </div> */}
+
+
             </div>
         </Layout>
     );
 };
 
-export default Articles;
+export default Forum;
