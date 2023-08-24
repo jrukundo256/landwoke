@@ -60,7 +60,7 @@ const links = [
     }
 ]
 
-export function LandingPage({ children }) {
+export function LandingPage() {
     return (
         <main className="flex w-full">
             {/* <main className="flex w-screen items-center justify-between outline fixed"></main> */}

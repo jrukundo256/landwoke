@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Layout } from '../../landingPageComponents';
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -32,26 +33,28 @@ const Articles = () => {
     console.log(articles);
 
     return (
-        <div>
-            <h1>Article List</h1>
-            <ul>
-                {articles.map((article) => (
-                    <li key={article.id}>
-                        <h2>{article.attributes.Title}</h2>
-                        <p>{article.attributes.Excerpt}</p>
-                        <p>Author: {article.attributes.Author}</p>
-                        <p>Publication Date: {article.attributes.PublicationDate}</p>
-                    </li>
-                ))}
-            </ul>
+        <Layout>
             <div>
-                {Array.from({ length: totalPages }, (_, index) => (
-                    <button key={index} onClick={() => handlePageChange(index + 1)}>
-                        {index + 1}
-                    </button>
-                ))}
+                <h1>Article List</h1>
+                {/* <ul>
+                    {articles.map((article) => (
+                        <li key={article.id}>
+                            <h2>{article.attributes.Title}</h2>
+                            <p>{article.attributes.Excerpt}</p>
+                            <p>Author: {article.attributes.Author}</p>
+                            <p>Publication Date: {article.attributes.PublicationDate}</p>
+                        </li>
+                    ))}
+                </ul>
+                <div>
+                    {Array.from({ length: totalPages }, (_, index) => (
+                        <button key={index} onClick={() => handlePageChange(index + 1)}>
+                            {index + 1}
+                        </button>
+                    ))}
+                </div> */}
             </div>
-        </div>
+        </Layout>
     );
 };
 
