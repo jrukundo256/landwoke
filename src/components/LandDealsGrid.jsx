@@ -10,7 +10,7 @@ const PRIMARY_COL_HEIGHT = rem(300);
 
 
 const useStyles = createStyles((theme) => ({
-    title: {
+    anotherTitle: {
         fontSize: rem(34),
         padding: '5px 0 0 0',
         color: '#222',
@@ -51,7 +51,7 @@ export function LandDealsGrid() {
     return (
         <div my="md" className='bg-[#EDEDED] py-20 px-20 mx-150 mb-20 flex justify-center'>
             <div className='border'>
-                <Title order={2} className={classes.title} ta="center" mt="sm">
+                <Title order={2} className={classes.anotherTitle} ta="center" mt="sm">
                     Land deals of the week
                 </Title>
 

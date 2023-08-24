@@ -1,4 +1,4 @@
-import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
+import { createStyles, rem, Title, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
 
 const mockdata = [
     {
@@ -25,6 +25,7 @@ const mockdata = [
 const useStyles = createStyles((theme) => ({
     card: {
         transition: 'transform 150ms ease, box-shadow 150ms ease',
+        fontFamily: 'Jost',
 
         '&:hover': {
             transform: 'scale(1.01)',
@@ -32,8 +33,42 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    anotherTitle: {
+        fontSize: rem(34),
+        fontFamily: 'Jost',
+        padding: '5px 0 0 0',
+        color: '#222',
+        fontWeight: 500,
+        fontFamily: 'Jost',
+
+        [theme.fn.smallerThan('sm')]: {
+            fontSize: rem(24),
+        },
+    },
+
+    description: {
+        maxWidth: 800,
+        fontFamily: 'Jost',
+        margin: 'auto',
+        padding: '20px 0',
+        fontFamily: 'Jost',
+        color: '#333',
+
+        '&::after': {
+            content: '""',
+            display: 'block',
+            backgroundColor: '#72B5A0',
+            width: rem(45),
+            height: rem(2),
+            marginTop: theme.spacing.sm,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        },
+    },
+
     title: {
-        fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+        // fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+        fontFamily: 'Jost',
         fontWeight: 600,
     },
 }));
@@ -57,13 +92,28 @@ export function ArticlesCards() {
 
     return (
         <Container py="xl">
-            <h2 className='font-bold text-xl'>Stay land woke!</h2>
-            <p>Latest information about land ownership and transactions, as well as legal processes
-                involved in resolving land disputes</p>
+            <Title order={2} className={classes.anotherTitle} ta="center" mt="sm">
+                Stay land woke!
+            </Title>
+
+            <Text className={classes.description} ta="center" mt="md">
+                Latest information about land ownership and transactions, as well as legal processes
+                involved in resolving land disputes
+            </Text>
+
             <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'xl', cols: 1 }]}>
                 {cards}
             </SimpleGrid>
-            <p>Hungry for more land-related information ? Discover more information today.</p>
+
+            <div className="text-center mt-5">
+                Hungry for more land-related information ?
+                <a
+                    href="#"
+                    className="text-[#5F5497] hover:underline"
+                >
+                    Discover more information today.
+                </a>
+            </div>
         </Container>
     );
 }
