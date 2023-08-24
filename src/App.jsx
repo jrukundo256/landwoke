@@ -1,21 +1,25 @@
-import { Layout } from "./components/Layout"
+import { Layout } from "./landingPageComponents/Layout"
 import { Helmet } from "react-helmet";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import LandingPage from "./pages/public/LandingPage";
+// import { LandingPage } from "./pages/public/LandingPage";
+import { LandingPage } from "./pages/public/LandingPage";
+import Articles from "./pages/public/Articles";
+
+
 const App = () => {
-  // return (
-  //   <h1 className="text-3xl font-bold underline">
-  //     LandWoke
-  //   </h1>
-  // )
-
   return (
-    <Layout>
-      <Helmet>
-        <title>LandWoke - Bringing trust and justice to land ownership</title>
-      </Helmet>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/articles" element={<Articles />} />
 
-    </Layout>
+
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;
