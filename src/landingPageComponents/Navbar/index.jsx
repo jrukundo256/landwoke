@@ -117,8 +117,16 @@ export function NavBar() {
                     </Group>
 
                     <Group className={classes.hiddenMobile}>
-                        <Button className='font-jost' variant="default">Log in</Button>
-                        <Button className='font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>Sign up</Button>
+                        <Link to="/login"> {/* Wrap the button with Link */}
+                            <Button className='font-jost' variant="default">
+                                Log in
+                            </Button>
+                        </Link>
+                        <Link to="/"> {/* Wrap the button with Link */}
+                            <Button className='font-jost bg-[#72B5A0] hover:bg-[#5A9681]'>
+                                Sign up
+                            </Button>
+                        </Link>
                     </Group>
 
                     <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
