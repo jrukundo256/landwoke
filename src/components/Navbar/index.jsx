@@ -94,7 +94,8 @@ export function NavBar() {
         <>
             <Header className="px-20 font-jost text-xl" height={80}>
                 <Group position="apart" sx={{ height: '100%' }}>
-                    <h3 className='font-bold font-outfit text-[#222]'>LandWoke</h3>
+                    {/* <h3 className='font-bold font-outfit text-[#222]'>LandWoke</h3> */}
+                    <h2 className='text-[#222] font-bold font-outfit text-lg border border-[#333] px-5 py rounded-xl'>LandWoke</h2>
 
                     <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
                         <a href="#" className={classes.link}>
